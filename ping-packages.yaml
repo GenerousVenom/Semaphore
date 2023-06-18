@@ -1,4 +1,5 @@
 - hosts: all
   become: yes
   tasks:
-    - ping
+    - name: Thinh ping all hosts
+      ansible.builtin.ping:
